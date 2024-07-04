@@ -29,12 +29,12 @@ Before you begin, ensure you have the following installed:
     pip install -r requirements.txt
     ```
 
-## Table Creation
+## Table Creation and SQL Queries
 
 Before running the data ingestion scripts, you need to create the necessary tables in your SQL database.
 
- **Query to create table and indexes**:
-    
+1. **Query to create table and indexes**:
+    ```sql
     -- SQL script to create daily_data table and also indexes
     CREATE TABLE StockTable (
         Date DATE ,
@@ -48,13 +48,11 @@ Before running the data ingestion scripts, you need to create the necessary tabl
         INDEX idx_date (Date),
         INDEX idx_company (Company)
     );
-    
-
-## SQL Queries
+    ```
 
 To analyze the data in your SQL database, you can use the following queries:
 
-1. **Company Wise Daily Variation of Prices**:
+2. **Company Wise Daily Variation of Prices**:
     ```sql
     -- SQL query to fetch Company Wise Daily Variation of Prices
     SELECT Company, Date, (High - Low) AS Daily_Variation
@@ -62,7 +60,7 @@ To analyze the data in your SQL database, you can use the following queries:
     ORDER BY Company, Date;
     ```
 
-2. **Company Wise Daily Volume Change**:
+3. **Company Wise Daily Volume Change**:
     ```sql
     -- SQL query to fetch Company Wise Daily Volume Change
     SELECT 
