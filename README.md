@@ -35,7 +35,6 @@ Before running the data ingestion scripts, you need to create the necessary tabl
 
  **Query to create table and indexes**:
     
-    ```sql
     -- SQL script to create daily_data table and also indexes
     CREATE TABLE StockTable (
         Date DATE ,
@@ -49,7 +48,7 @@ Before running the data ingestion scripts, you need to create the necessary tabl
         INDEX idx_date (Date),
         INDEX idx_company (Company)
     );
-    ```
+    
 
 ## SQL Queries
 
