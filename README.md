@@ -15,7 +15,7 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
     ```sh
     git clone https://github.com/Ankit-1597/Stock-market-data-fetcher.git
-    cd stock-market-data-fetcher
+    cd Stock-market-data-fetcher
     ```
 
 2. Create and activate a virtual environment (optional but recommended):
@@ -34,6 +34,7 @@ Before you begin, ensure you have the following installed:
 Before running the data ingestion scripts, you need to create the necessary tables in your SQL database.
 
  **Query to create table and indexes**:
+    
     ```sql
     -- SQL script to create daily_data table and also indexes
     CREATE TABLE StockTable (
